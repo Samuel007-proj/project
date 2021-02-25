@@ -84,7 +84,7 @@ a.logo:hover{
 }
 .jumbo-img{
 	width: 100%;
-	height: auto;
+	height: 100%;
 }
 
 .bg-text{
@@ -311,9 +311,21 @@ a.logo:hover{
 		text-align: center;
 }
 
-
-
 footer{
+		background-color: #221;
+		padding-bottom: 20px;
+}
+
+.bottom{
+	text-align: center;
+	width: 100;
+	margin: 10px 0;
+	font-variant: small-caps;
+	font-size: 20px;
+	color: #fff;
+}
+
+.footer-flex{
 	width: 100%;	
 	padding: 30px;
 	margin-top: 3px;
@@ -325,7 +337,7 @@ footer{
 	align-content: center;
 }
 .contact, .options, .newsletter{
-	flex: 30%;
+	flex: 33.33%;
 	margin-right: 10%;
 	padding: 10px;
 }
@@ -351,6 +363,36 @@ footer{
 	padding: 10px;
 
 }
+.newsletter input[type='submit']{
+	background: #2528ff;
+	color: white;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	padding: 15px;
+	width: 80%;
+	font-variant: small-caps;
+	font-weight: bold;	
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	transition: .1s;
+
+}
+
+.newsletter input[type='submit']:focus{
+	background: white;
+	color: #2528ff;
+}
+.bottom{
+	flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
 
 																	/*media queries*/
 
@@ -471,7 +513,7 @@ footer{
 	flex-direction: column;
 	color: rgb(80,80,80)
 }
-footer{
+.footer-flex{
 	width: 100%;	
 	padding: 30px;
 	margin-top: 3px;
@@ -484,14 +526,23 @@ footer{
 	align-content: center;
 }
 
+.contact, .options, .newsletter{
+	flex: 60%;
+	margin-left: 20%;
+	padding: 10px;
+	text-align: center;
+
+}
+
+
 }
 
 
 @media only screen and (max-width: 768px){
 	.jumbo{
-		height: 300px;
-		overflow: hidden;
-		position: relative;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
 	}
 	.bg-text{
 	position: absolute;
